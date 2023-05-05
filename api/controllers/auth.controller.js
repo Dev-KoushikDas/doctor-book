@@ -49,7 +49,7 @@ export const login = async (req, res, next) => {
     id: user._id,
     isSeller: user.isSeller,
     },
-    process.env.JWT_KEY
+    process.env.JWTKEY
     );
 
     const { password, ...info } = user._doc;
