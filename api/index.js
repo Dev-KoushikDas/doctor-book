@@ -8,7 +8,7 @@ import conversationRoute from "./routes/conversation.route.js";
 import messageRoute from "./routes/message.route.js";
 import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
-import cookieParser from "cookie-parser";
+import cookieparser from "cookie-parser";
 import cors from "cors";
 
 const app = express();
@@ -26,7 +26,7 @@ const connect = async () => {
 
 app.use(cors({ origin: "https://doctor-book-rq6v.vercel.app/", credentials: true }));
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieparser());
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
