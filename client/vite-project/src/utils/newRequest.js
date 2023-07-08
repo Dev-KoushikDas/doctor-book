@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const newRequest = axios.create({
-  baseURL: "https://doctor-book.vercel.app/api/",
+  baseURL: "https://doctor-book.vercel.app/",
   withCredentials: true,
 });
 
