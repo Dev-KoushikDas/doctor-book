@@ -25,11 +25,10 @@ const connect = async () => {
 };
 
 app.use(cors(
-/*{ 
+{ 
 origin:true, 
-credentials: true,
-withcredentials:true}
-*/
+withCredentials:true
+}
 ));
 
 app.use(express.json());
