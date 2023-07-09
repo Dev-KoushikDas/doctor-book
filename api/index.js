@@ -24,10 +24,13 @@ const connect = async () => {
   }
 };
 
-app.use(cors({ 
+app.use(cors(
+/*{ 
 origin:true, 
 credentials: true,
-withcredentials:true}));
+withcredentials:true}
+*/
+));
 
 app.use(express.json());
 app.use(cookieparser());
