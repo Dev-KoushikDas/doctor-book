@@ -26,8 +26,8 @@ const connect = async () => {
 
 app.use(cors(
 { 
-origin:true, 
-withCredentials:true
+origin:"http://localhost:5173", 
+credentials:true
 }
 ));
 
