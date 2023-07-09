@@ -16,7 +16,7 @@ function Login() {
     try {
       const res = await axios.post("https://doctor-api2.onrender.com/api/auth/login", 
       { username, password, },
-      {withCredentials:true}
+     // {withCredentials:true}
       );
       localStorage.setItem("currentUser", JSON.stringify(res.data));
       navigate("/")

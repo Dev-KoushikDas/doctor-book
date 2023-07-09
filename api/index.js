@@ -26,7 +26,7 @@ const connect = async () => {
 
 app.use(cors(
 { 
-origin:"http://localhost:5173", 
+origin:"https://doctor-book-hf9n.vercel.app/", 
 //credentials:true
 }
 ));
