@@ -2,7 +2,7 @@ import axios from "axios";
 
 const newRequest = axios.create({
   baseURL: "https://doctor-api2.onrender.com/api",
-  //withCredentials: true,
+  withCredentials: true,
   origin:"*"
 });
 
